@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="./index.css">
+<title>Dashboard</title>
+</head>
+<body style="text-align: left; margin:auto 0px auto auto;" onLoad="showDate()">
+
+<!--dashboard-->
+
+<div class="header">
+    <header>
+     <div id="main">
+         <button class="openbtn" onclick="openNav()">☰</button>              
+     </div>
+      <h3 style="text-align: left; margin:auto 0px auto auto;">Team Techno</h3>
+      <h2 align="center" style="text-align: center; margin:auto 0px auto auto;"><i>Petty Cash Book</i></h2>
+    </header>
+
+    <h1>Dashboard</h1>
+    <h2><span id ='curdate'></span></h2>
+</div>
+
+<div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+  <a href="./dashboard.html">Dashboard</a>
+  <a href="./create_ modify.html">Create / Modify</a>
+  <a href="./weekly_report.html">Weeky Report</a>
+  <a href="./monthly_report.html">Monthly Report</a>
+  <a href="./yearly_report.html">Yearly Report</a>
+</div>
+
+<div id="income_and_expence">
+    <table style="padding: 50px;">
+      <tr>
+          <td>
+              <form id="Income">
+                  <h2 style="text-align: center;">Income Head</h2>
+
+                  <!-- income head -->
+                  <label for="income Head">Income Head : </label>
+                  <input type="text" id="income_head" name="income_head" placeholder="Enter income head" required>
+
+                   <!-- amount -->
+                   <label for="amount">Amount : </label>
+                   <input type="number" min ="0" id="amount" name="amount" placeholder="Enter amount" required>
+
+                  <!-- description -->
+                  <label for="description">Description : </label>
+                  <input type="text" id="description" name="description" placeholder="description" required>
+          
+                  </select>
+          
+                  <br><br>
+          
+                  <!-- Submit button -->
+                  <input type="submit" value="submit">
+                </form>
+
+          </td>
+          <td>
+              <form id="">
+
+                  <h2 style="text-align: center;">Expense Head </h2>
+                  <!-- expense head -->
+                  <label for="expense head">Expense Head : </label>
+                  <input type="text" id="expense_head" name="expense_head" placeholder="Enter expense head" required>
+
+                  <!-- amount -->
+                  <label for="amount">Amount : </label>
+                  <input type="number" min = "0" id="amount" name="amount" placeholder="Enter amount" required >
+
+                  <!-- description -->
+                  <label for="description">Description : </label>
+                  <input type="text" id="description" name="description" placeholder="description" required>
+          
+                  </select>
+          
+                  <br><br>
+          
+                  <!-- Submit button -->
+                  <input type="submit" value="submit">
+                </form>
+
+          </td>
+      </tr>
+    </table>
+  </div>
+
+<script src="./index.js"></script>
+   
+</body>
+</html> 

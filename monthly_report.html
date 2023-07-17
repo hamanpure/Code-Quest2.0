@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monthly Report</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body style="text-align: left; margin:auto 0px auto auto;" onLoad="showDate()">
+
+    <div class="header">
+        <header>
+         <div id="main">
+             <button class="openbtn" onclick="openNav()">☰</button>              
+         </div>
+          <h3 style="text-align: left; margin:auto 0px auto auto;">Team Techno</h3>
+          <h2 align="center" style="text-align: center; margin:auto 0px auto auto;"><i>Petty Cash Book</i></h2>
+        </header>
+    
+        <h2><span id ='curdate'></span></h2>
+        <h1 align = "center">Monthly Report</h1>
+    </div>
+
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <a href="./dashboard.html">Dashboard</a>
+        <a href="./create_ modify.html">Create / Modify</a>
+        <a href="./weekly_report.html">Weeky Report</a>
+        <a href="./monthly_report.html">Monthly Report</a>
+        <a href="./yearly_report.html">Yearly Report</a>
+    </div>
+
+
+      <script src="./index.js"></script>
+
+</body>
+
+</html>
